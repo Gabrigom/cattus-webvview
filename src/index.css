@@ -1,0 +1,92 @@
+/* Reset básico para manter consistência */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configurações gerais */
+html {
+  font-size: 16px; /* Base para rem */
+  -webkit-text-size-adjust: 100%; /* Previne mudanças no tamanho da fonte no iOS */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Garantir que os elementos ocupem a largura total */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Layout flexível para dispositivos móveis */
+.container {
+  width: 90%;
+  max-width: 600px; /* Limita a largura máxima para dispositivos maiores */
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Botões responsivos */
+button {
+  display: inline-block;
+  background-color: #6200ea;
+  color: #fff;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Formulários amigáveis */
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #6200ea;
+  box-shadow: 0 0 0 2px rgba(98, 0, 234, 0.2);
+}
+
+/* Navegação fixada ao rodapé */
+.footer {
+  margin-top: auto;
+  padding: 16px;
+  text-align: center;
+  background-color: #6200ea;
+  color: #fff;
+  font-size: 0.9rem;
+}
